@@ -1,0 +1,42 @@
+.section__introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 0 30px;
+  height: 96vh;
+}
+.introduce {
+  margin-top: 20px;
+}
+.opening-date {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.section__letter-front,
+.section__letter-end {
+  flex-direction: column;
+}
+.letter-front,
+.letter-end {
+  pointer-events: none;
+  height: 230px;
+}
+.letter__MORY__front,
+.letter__RY__front {
+  fill: none;
+  stroke: #111111;
+}
+.letter-front__Top,
+.letter-end__Top {
+  display: flex;
+}
+.letter-front__Middle,
+.letter-end__Middle {
+  display: flex;
+  margin: 86px 0;
+}
+.section__about__1 {
+  flex-direction: column;
+  justify-content: center;
+}

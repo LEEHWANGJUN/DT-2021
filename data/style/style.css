@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../images/bg/texture.png);
+}
+
+/********** PC **********/
+@media screen and (min-width: 1024px) {
+  /********** 헤더 영역 **********/
+  .header {
+    width: 96vh;
+    height: 60px;
+    position: absolute;
+    top: 46.5%;
+    left: 0%;
+    transform: translateX(-46.5%) rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    background: url(../images/bg/texture.png);
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  .header a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .logo__svg {
+    width: 120px;
+    vertical-align: middle;
+  }
+  .navi-first__ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    text-align: center;
+  }
+  .navi-first__li {
+    margin: 0 20px;
+    text-align: center;
+    list-style: none;
+  }
+  .navi-second {
+    position: absolute;
+    left: -120px;
+    top: 2vh;
+    background: url(../images/bg/texture.png);
+    width: 120px;
+    height: 96vh;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+    visibility: hidden;
+    transition: ease-in 0.7s all;
+    border-right: solid 1px #222;
+    z-index: 1;
+  }
+  .navi-second__slide-on {
+    visibility: visible;
+    transition: ease-out 0.5s all;
+    left: 60px;
+  }
+  .navi-second__dl {
+    width: 100%;
+    text-align: center;
+  }
+  .navi-second__dd {
+    margin: 10px 0;
+  }
+  .navi-second__dt a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .navi-second__dd a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
+  .navi__logo {
+    margin-right: 10px;
+  }
+  /********** 콘텐츠 영역 **********/
+  .contents {
+    background: url(../images/bg/texture.png) local;
+    white-space: nowrap;
+    height: 96vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin: 2vh 0 2vh 60px;
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+  }
+  /*      스크롤바 안보이게       */
+  .contents::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .section-title {
+    display: table;
+    height: 100%;
+    padding-right: 20px;
+    border-right: solid 1px #222222;
+    vertical-align: middle;
+  }
+  .section-title span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .section-contents {
+    padding: 0 300px;
+  }
+  .scrollbar-track-x {
+    height: 1px !important;
+    bottom: 40px !important;
+    margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(0, 0, 0, 0.06) !important;
+  }
+  .scrollbar-track-x .scrollbar-thumb {
+    height: 3px;
+    top: -1px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
