@@ -1,89 +1,36 @@
 const scrollbar = document.querySelector('.contents');
+const saDefaultMargin= 200;
+let saTriggerMargin = 0;
+const saElementList = document.querySelectorAll('.sa');
 
 function horizontalScroll(event){
     event.preventDefault();
-    
-    scrollbar.scrollLeft -= (event.wheelDelta*3|| -event.detail); 
+    scrollbar.scrollLeft -= (event.wheelDelta*2 || -event.detail);
 }
-document.addEventListener('mousewheel',horizontalScroll, {passive:false});
 
-/*
-let option = {
-  x: 0,
-  speed: 1.5,
-  limit: 2,
-  time: 0.3,
-};
-
-
-
-const scrollbar =  Scrollbar.init(document.querySelector('#scrollbar'), {
-  overscrollEffect: 'bounce',
-  alwaysShowTracks: true
-});
-const listener = (status) => {
-  console.log('scrollbar', status.offset.x)
-  active = parseInt(status.offset.x / 500);
-  
-  bullets.forEach(b => {b.classList.remove('active')});
-  bullets[active].classList.add('active');
-};
-scrollbar.addListener(listener);
-
-let active = 0;
-let pag, bullets;
-
-const pagination = () => {
-  const items = document.querySelectorAll('.item');
-  pag = document.createElement('div');
-  pag.classList.add('pagination');
-  items.forEach((item, i) => {
-    const bullet = document.createElement('button');
-    bullet.classList.add('bullet');
-    bullet.innerHTML = i
-    pag.appendChild(bullet)
-  });
-  document.getElementById('scrollbar').appendChild(pag);
-  bullets = document.querySelectorAll('.bullet');
-
-  bullets.forEach((b, i) => {
-    b.addEventListener('click', el => {
-      bullets.forEach(el => {el.classList.remove('active')})
-      el.target.classList.add('active');
-      const i = parseInt(el.target.innerHTML);
-      active = i;
-
-      let x = 500 * i;
-      if (x > scrollbar.limit.x) {
-        x = scrollbar.limit.x
-      }
-
-      TweenMax.to(option, 1, {
-        x: x,
-        ease: Power4.easeOut,
-        onUpdate: () => {
-          window.console.log('option', option.x)
-          scrollbar.scrollTo(option.x, 0, 0);
-        }
-      })
-    });
-  });
-}
-pagination();
-
-const horizontalScroll = (e) => {
-  const y = parseInt(e.deltaY * option.speed);
-  let x = scrollbar.offset.x + y;
-  x = x < 0 ? 0 : x > scrollbar.limit.x ? scrollbar.limit.x : x;
-
-  TweenMax.to(option, option.time, {
-    x: x,
-    onUpdate: () => {
-      window.console.log('option', option.x)
-      scrollbar.scrollTo(option.x, 0, 0);
+function scrollAnimation(){
+  for(const element of saElementList){
+    if(element.dataset.saMargin){
+      saTriggerMargin  = parseInt(element.dataset.saMargin);
+      console.log(saTriggerMargin);
+    }else{
+      saTriggerMargin = saDefaultMargin;
     }
-  })
-};
-document.querySelector('.wrapper').addEventListener('mousewheel', (e) => {
-  horizontalScroll(e)
-});*/
+    if(!element.classList.contains('show')){
+      if(window.innerWidth > element.getBoundingClientRect().left + saTriggerMargin  && 0 < element.getBoundingClientRect().right){
+        element.classList.add('show');
+      }
+    }
+    else{
+      if(window.innerWidth < element.getBoundingClientRect().left || 0 > element.getBoundingClientRect().right){
+        element.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+document.addEventListener('wheel',horizontalScroll, {passive:false});
+window.addEventListener('load', scrollAnimation);
+window.addEventListener('wheel', scrollAnimation);
+window.addEventListener('keydown',scrollAnimation);

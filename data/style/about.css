@@ -1,3 +1,6 @@
+.contents {
+  font-size: 1.7rem;
+}
 .section__introduce {
   display: flex;
   flex-direction: column;
@@ -13,6 +16,72 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
+.section__icon {
+  padding: 30%;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 7px 12px;
+  height: 35px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 8px;
+  border-radius: 25%;
+  background-color: #000;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@keyframes downup {
+  0% {
+    opacity: 0;
+    transform: translateY(0, 100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  to {
+    margin-bottom: 0;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    margin-bottom: 8px;
+    animation-timing-function: ease-in;
+  }
+}
+
 .section__letter-front,
 .section__letter-end {
   flex-direction: column;
@@ -35,8 +104,80 @@
 .letter-end__Middle {
   display: flex;
   margin: 86px 0;
+} /*
+.letter-front__ME {
+  margin-left: 300px;
 }
-.section__about__1 {
+.letter-front__MORY {
+  margin-left: 200px;
+}
+.letter-front__MEMO {
+  margin-left: 100px;
+}
+.letter-front__RY {
+  margin-left: 200px;
+}
+.letter-front__MEMORY {
+  margin-left: 100px;
+}*/
+.section__about {
+  margin: 0 50vh;
+}
+.section__about__ME,
+.section__about__MEMO,
+.section__about__MEMORY {
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 20px;
+}
+.section__about__MEMO {
+  padding-bottom: 200px;
+}
+.section__about__MEMORY {
+  padding-top: 150px;
+}
+.section__about__text {
+  margin: auto;
+}
+
+.section-contents {
+  display: flex;
+}
+.map {
+  margin-right: 10vh;
+}
+.madeby__table {
+  margin: 10vh;
+}
+.madeby__table td {
+  padding-left: 3vh;
+}
+.icon {
+  vertical-align: middle;
+}
+.contact__table {
+  margin: 10vh;
+}
+.contact__table td,
+.contact__table th {
+  padding: 1vh;
+}
+.contact__table td {
+  padding-left: 3vh;
+}
+.section__letter-end {
+  margin-right: 10vh;
+}
+.letter-end__ME {
+}
+.letter-end__MORY {
+  opacity: 0 !important;
+}
+.letter-end__MEMO {
+}
+.letter-end__RY {
+  opacity: 0 !important;
+}
+.letter-end__MEMORY {
 }
