@@ -5,16 +5,22 @@
 html,
 body {
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background: url(../images/bg/texture.png);
 }
+<<<<<<< HEAD
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+=======
 a {
   text-decoration: none;
   color: #000;
 }
+>>>>>>> aeb50928be3bca3466af2b242c2288a1680c1d68
 /********** PC **********/
 @media screen and (min-width: 1024px) {
   /********** 헤더 영역 **********/

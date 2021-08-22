@@ -1,0 +1,36 @@
+.team-subject {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.42;
+    text-align: center;
+    color: #000;
+  }
+
+  .team {
+    margin: 107px 0px 0px 0px;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+
+  .team-explain {
+    width: 300px;
+    height: 436px;
+
+    margin: 42px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    
+    text-align: left;
+    
+    color: #9a9a9a;
+    background-color: #b13636;
+  }
+
+  .team-explain-word {
+    word-break: break-all;
+    display: inline-block;
+  }
