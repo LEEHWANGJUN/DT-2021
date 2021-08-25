@@ -1,5 +1,6 @@
 .contents {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 .section__introduce {
   display: flex;
@@ -96,6 +97,15 @@
   fill: none;
   stroke: #111111;
 }
+.letter-front__Top,
+.letter-end__Top,
+.letter-front__Middle,
+.letter-end__Middle,
+.letter-front__Bottom,
+.letter-end__Bottom {
+  transition: ease 0.7s;
+}
+
 .letter-front__Top,
 .letter-end__Top {
   display: flex;

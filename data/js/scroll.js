@@ -12,13 +12,15 @@ function scrollAnimation(){
   for(const element of saElementList){
     if(element.dataset.saMargin){
       saTriggerMargin  = parseInt(element.dataset.saMargin);
-      console.log(saTriggerMargin);
     }else{
       saTriggerMargin = saDefaultMargin;
     }
     if(!element.classList.contains('show')){
       if(window.innerWidth > element.getBoundingClientRect().left + saTriggerMargin  && 0 < element.getBoundingClientRect().right){
-        element.classList.add('show');
+        let delay = (element.dataset.saDelay) ? element.dataset.saDelay : 0;
+        setTimeout(function(){
+          element.classList.add('show');
+        }, delay);
       }
     }
     else{
