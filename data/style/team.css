@@ -1,0 +1,56 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+.contents {
+  font-size: 1.7rem;
+  
+}
+.team_flex_container{
+  display: flex;
+}
+.team {
+  flex-direction: row;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    margin-left: 50px;
+    width: 100px;
+    background-color: rgba(21, 42, 100, 10);
+  }
+
+  .team_name {
+    margin-top: 8vh;
+    height: 20vh;
+    font-size: 3vmin;
+    font-weight: 700;
+    display:table;
+    
+  }
+  .team_name_box {
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .team_title {
+    width: 100%;
+    height: 20vh;
+    display:table;
+    font-size: 4vmin;
+    font-weight: 700;
+    
+  }
+  .team_title_box {
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .team_text {
+    color: #666666;
+    width: 500px;
+    height: 20vh;
+    
+    font-size: 16px;
+    
+    display:block;
+  }
+  .team2 {
+    
+    flex-direction: row;
+    margin-left: 50px;
+    width: 800px;
+    background-color: rgba(111, 42, 100, 10);
+  }
