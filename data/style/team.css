@@ -1,0 +1,72 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+.contents {
+  font-size: 1.7rem;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.team_flex_container{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.team {
+    flex-direction: row;
+    margin-left: 50px;
+    width: 800px;
+  }
+  .team_name {
+    margin-top: 8vh;
+    height: 20vh;
+    font-size: 3vmin;
+    font-weight: 700;
+    display:table;
+  }
+  .team_title {
+    width: 100%;
+    height: 20vh;
+    display:table;
+    font-size: 4vmin;
+    font-weight: 700;
+  }
+  .middle_box {
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .team_text {
+    color: #999999;
+    width: 500px;
+    height: 20vh;
+    margin-bottom: 28vh;
+    font-size: 16px;
+  }
+  .team_film {
+    width: 100%;
+    margin-top: 13vh;
+    height: 15vh;
+    font-size: 3vmin;
+    font-weight: 700;
+    display:table;
+    text-align: right;
+  }
+  .team_film_title {
+    width: 100%;
+    margin-top: 10vh;
+    height: 10vh;
+    display:table;
+    font-size: 4vmin;
+    font-weight: 700;
+    text-align: right;
+  }
+  .team_film_text {
+    color: #999999;
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 13vh;
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .video_team_film {
+    
+    height: 70vh;
+    }
