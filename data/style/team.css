@@ -67,6 +67,12 @@
   }
 
   .video_team_film {
-    
     height: 70vh;
     }
+  
+  #myVideo {
+      height: 70vh;
+      min-width: 500px;
+    }
+
+  
