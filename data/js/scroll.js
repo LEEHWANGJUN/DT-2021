@@ -5,7 +5,7 @@ const saElementList = document.querySelectorAll('.sa');
 
 function horizontalScroll(event){
     event.preventDefault();
-    scrollbar.scrollLeft -= (event.wheelDelta*2 || -event.detail);
+    scrollbar.scrollLeft -= (event.wheelDelta*3 || -event.detail);
 }
 
 function scrollAnimation(){
