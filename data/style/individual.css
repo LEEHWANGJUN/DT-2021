@@ -1,3 +1,7 @@
+body{
+	font-family: 'Apple SD Gothic Neo', 'sans-serif';
+}
+
 .person_introduce {
 	
 	display: flex;
@@ -28,21 +32,19 @@
   }
   
   #person{
-	  width: 500px;
-	  height: 750px;
-	  margin: 0 50px;
+	width: 500px;
+	height: 550px;
+	margin: 0 50px;
   }
   
   .individual_img{
-	  opacity:0;
 	  width: 600px;
 	  height: 750px;
-	  margin: 0 50px;
+	  margin-right:200px;
 	  
   }
   
   .inter_img{
-	  opacity:0;
 	  width: 800px;
 	  height: 580px;
 	  margin: 0 80px;
@@ -61,8 +63,8 @@
 	  transition: .3s ease-in-out;
   }
   .hover01 figure:hover img {
-	  -webkit-transform: scale(1.2);
-	  transform: scale(1.2);
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
   }
   
   #person_name_kor{
@@ -120,7 +122,7 @@
   .video_name{
 	  text-align: right;
 	  letter-spacing: 4px;
-	  font-weight: 500;
+	  font-weight: 600;
 	  font-size:3rem;
   }
   
@@ -143,15 +145,12 @@
   }
   
   .dd{
-	  margin:50px 0;
-	  opacity:0;
-	  
+	  margin:30px;
   }
   
   
   .ddd{
-	  margin:50px 0;
-	  opacity:0;
+	margin-left:100px;
   }
   
   .howinter{
@@ -194,17 +193,13 @@
   }
   
   .inter{
-	  margin-left: 350px;
+	  margin-left: 200px;
   }
   
   .sequence_ex{
 	  
 	  text-align: center;
 	  margin-top: 20px;
-  }
-  
-  .body{
-	  font-family: 'mpgd';
   }
   
   
@@ -226,6 +221,6 @@
   }
   
   @font-face {
-	  font-family: 'mpgd';
-	  src: url('../fonts/THEmpgtB.otf') format('truetype');
+    src : url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "Apple SD Gothic Neo";
   }
