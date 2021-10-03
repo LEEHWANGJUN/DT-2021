@@ -208,10 +208,13 @@
   }
 }
 @media screen and (max-width: 480px) {
+  
   .section__icon {
     display: none;
   }
   .contents {
+    display: inline-block;
+    text-align:center;
     font-size: 1.2rem;
     line-height: 2.5rem;
   }

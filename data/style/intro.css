@@ -1,0 +1,62 @@
+
+
+.intro {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  background: 50% 100%/10%  no-repeat;
+	color: #fff;
+	font-family: 'Bodoni 11';
+	font-size: 10vw;
+	font-size: 10vh;
+		
+	-webkit-animation: reveal 2500ms ease-in-out forwards 100ms, linear infinite 1500ms;	
+			animation: reveal 2500ms ease-in-out forwards 100ms, linear infinite 1500ms;			
+}
+
+
+body {
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	-webkit-animation: fadein 4s;
+			animation: fadein 4s;
+	}
+
+
+@-webkit-keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+@keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+	
+
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 15px;
+  }
+  100% {
+    background-size: 500%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 15px;
+  }
+  100% {
+    background-size: 500%;
+  }
+}

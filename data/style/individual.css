@@ -1,0 +1,336 @@
+@charset "utf-8";
+@media screen and (min-width: 480px) {
+.contents{
+	line-height: 2.8rem;
+	display: flex;
+}
+body{
+    width: 100vw;
+    margin: auto;
+    align-items: center;
+}
+.scroll-section {
+	align-items: center;
+}
+.person_introduce {
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 0 0 30px;
+	height: 96vh;
+  }
+
+  .opening-date {
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+	font-weight: bold;
+  }
+  .person_information{
+	  transform: translateY(3rem);
+	  animation: fadein 2s, up 500ms linear forwards;
+  }
+  figure {
+	  padding: 0;
+	  background: #fff;
+	  overflow: hidden;
+	  align-items: center;
+  }
+  #person{
+	position: relative;
+	width: 500px;
+	height: 550px;
+	margin: 0 50px;
+	align-items: center;
+  }
+  #person img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
+
+  }
+  .individual_img{
+	  width: 600px;
+	  height: 750px;
+	  margin-right:200px;
+  }
+  .inter_img{
+	  width: 800px;
+	  height: 580px;
+	  margin: 0 80px;
+  }
+  figure:hover+span {
+	  bottom: -36px;
+	  opacity: 1;
+  }
+  .hover01 figure img {
+	  -webkit-transform: scale(1);
+	  transform: scale(1);
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+  .hover01 figure:hover img {
+	  -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+  }
+  
+  #person_name_kor{
+	  flex-direction: column;
+	  justify-content: center;
+	  font-size: 4rem;
+	  font-weight:bold;
+	  margin-bottom: 15px;
+  }
+  #person_name_eng{
+	  font-size: 3rem;
+	  color : #444;
+	  justify-content: center;
+  }
+  #email{
+	  margin : 50px 0;
+  }
+  .work_information{
+	  transform: translateY(3rem);
+	  animation: fadein 2s, up 500ms linear forwards;
+	  
+	  margin : 0 300px;
+  }
+  #concept{
+	  text-align: left;
+	  letter-spacing: 2px;
+	  font-weight: 500;
+	  font-size:2rem;
+  }
+  #work_name{
+	  font-size : 4rem;
+	  font-weight: bolder;
+	  margin: 20px 0;
+  }
+  #work_explain{
+	  white-space: normal;
+	  word-break:break-all;
+	  color: gray;
+	  width: 550px;
+	  font-size : 1.5rem;
+	  margin-top : 50px;
+  }
+  .individual_work{
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+  }
+  .video_name{
+	  letter-spacing: 3px;
+	  font-weight: 600;
+	  white-space: normal;
+	  word-break:keep-all;
+	  font-size:3rem;
+  }
+  .mom_touch{
+	  margin:200px 0;
+	  letter-spacing: 3px;
+	  font-weight: bold;
+	  font-size:2.5rem;
+	  white-space:normal;
+  }
+  .touch_information{
+	  margin:10px 0;
+	  color : gray;
+	  white-space: normal;
+	  word-break:break-all;
+	  font-size:1.5rem;
+	  width: 180px;
+	  float: right;
+  }
+  .dd{
+	  margin:50px;
+	  text-align: right;
+  }
+  .section-title{
+	margin-right:100px;
+  }
+  .ddd{
+	margin:50px;
+	text-align: right;
+  }
+  .howinter{
+	  margin: 0 200px;
+  }
+  #howto_img{
+	  margin-right: 80px;
+  }
+  .howto{
+	  letter-spacing: 5px;
+	  font-weight: 600;
+	  font-size:2rem;
+  }
+  .howto_explain{
+	  align-items: center;
+	  font-size:1.5rem;
+	  margin : 0 20px ;
+  }
+  .how{
+	  display: flex;
+	  margin : 50px 0;
+  }
+  .sequence{
+	  margin-top : 50px;
+	  margin-right : 30px;
+  }
+  .inter_how{
+	  margin-bottom: 100px;
+	  text-align: left;
+	  letter-spacing: 4px;
+	  width:200px;
+	  font-weight: 600;
+	  font-size:3rem;
+  }
+  .inter{
+  	  white-space: normal;
+	  word-break:keep-all;
+	  margin-left: 200px;
+  }
+  .sequence_ex{
+	  text-align: center;
+	  margin-top: 20px;
+  }
+  .sa-up {
+	transform: translate(0, 70px);
+  }
+  .sa-down {
+	transform: translate(0, -70px);
+  }
+  .sa-scaleUp {
+	transform: scale(0.7);
+  }
+  .sa-right {
+	transform: translate(-150px, 0);
+  }
+  .mobile_only{
+	  display:none;
+  }
+  @keyframes up {
+	  
+	  100% {
+		  transform: translateY(0);
+	  }
+  }
+  @keyframes fadein {
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
+ 
+}
+@font-face {
+    src : url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "Apple SD Gothic Neo";
+  }
+
+@media screen and (max-width: 480px) {
+	*{
+		font-family: 'Apple SD Gothic Neo', 'sans-serif';
+	}
+	html,
+	body {
+		font-size: 12px;
+  	}
+	.section-title {
+		width: 100%;
+	}
+	.scroll-section{
+		width: 100%;
+		text-align: center;
+		margin-top:80px;
+	}
+	.contents{
+		line-height: 1.5rem;
+		text-align: center;   
+		margin-top:100px;
+		margin: 0 16px;
+	}
+	.name{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	#person_name_kor{
+		font-size: 1.4rem;
+		font-weight:bold;
+		margin-right: 15px;
+	}
+	#email{
+		margin-top: 2px;
+		font-size:8px
+	}
+	.section{
+		margin-top: 100px;
+	}
+	.video_name{
+		margin:7px 0;
+		font-size: 1.2rem;
+		font-weight:bold;
+	}
+
+	.inter_how{
+		margin:7px 0;
+		font-size: 1.2rem;
+		font-weight:bold;
+	}
+	.inter{
+		margin: 30px 0;
+	}
+	.line {
+		height:1px;
+		background:#000;
+		font-size:0;
+		line-height:0;
+		padding:0;
+		margin:0;
+	}
+	.person_information{
+		margin : 40px 0;
+	}
+	.work_information{
+		margin-top: 50px;
+	}
+	.pc_only{
+		display:none;
+	}
+	#work_name{
+		margin:5px 0;
+		font-size: 1.4rem;
+		font-weight:bold;
+	}
+	#work_explain{
+		word-break:break-all;
+		margin: 40px 10px;
+	}
+	.mom_touch{
+		margin:7px 0;
+		font-size: 1.3rem;
+		font-weight:bold;
+	}
+	.how_mobile{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom:50px;
+	}
+	.img_mar{
+		margin: 30px 0;
+	}
+	.sequence{
+		margin-left : 16px;
+	}
+	.sequence_ex{
+		margin-left : 16px;
+	}
+	.mobile__img {
+		width: 100%;
+		width: -moz-available;
+		width: -webkit-fill-available;
+		width: fill-available;
+	  }
+}
