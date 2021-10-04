@@ -108,7 +108,7 @@ a {
     overflow: auto;
     display: flex;
     align-items: center;
-    padding: 2vh 0 2vh 60px;
+    margin: 2vh 0 2vh 60px;
     font-size: 1.5rem;
     scroll-behavior: smooth;
     overflow-y: hidden;
@@ -304,21 +304,6 @@ a {
     padding: 2% 0;
     text-align: justify;
     align-items: center;
-  }
-}
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 10px;
-  }
-  .contents {
-    width: 100%;
-    background-color: aquamarine;
-    /*background: url(../images/bg/texture.png) local;*/
-    box-sizing: border-box;
-    white-space: nowrap;
-    overflow: auto;
-    font-size: 1.5rem;
-    scroll-behavior: smooth;
   }
 }
 
