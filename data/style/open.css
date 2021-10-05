@@ -8,15 +8,11 @@
   }
 @media screen and (min-width: 480px) {
     .open-contents {
-        position:relative;
         white-space: nowrap;
         height: 96vh;
-        display: flex;
-        align-items: center;
-        margin: 2vh 0px;
+        padding: 2vh 0px;
         overflow: hidden;
         font-size: 20rem;
-        width: 100%;
         scroll-behavior: smooth;
     }
     html, body{
@@ -27,11 +23,7 @@
         margin:0;
     }
     .scroll-section {
-        position: relative;
-        display: flex;
-        align-items: stretch;
-        vertical-align: middle;
-        justify-content: space-between;
+        
     }
     .section__introduce {
         display: flex;
@@ -39,6 +31,7 @@
         justify-content: space-between;
         margin: 0 0 0 3vh;
         height: 96vh;
+        width: 50%;
     }
     .open-introduce {
         font-size: 1.6rem;
@@ -72,37 +65,41 @@
     }
     
     .letter-front{
-        pointer-events: none;
         height: 100%;
     }
     .height_ {
-        transition: ease 0.7s;
-        height: 22vh;
-        display: flex;
+        pointer-events: none;
+        transition: ease 0.7s;  
+        height: 20vh;
     }
+    
     /*MEMORY 글자 위치*/
     .section__letter-front {
         position:absolute;
+        width: 100%;
         display: flex;
+        justify-content: flex-end;
         flex-direction: column;
-        margin-top:14vh;
-        margin-left: 500px;
+        align-items: flex-end;
+        /*
+        justify-content: flex-end;
+        */
     }
-    .letter-front__Top {
-        margin-left: 400px;
+    .letter-front__ME{
+        height: 20vh;
+    }
+    .letter-front__MEMO{
+        height: 20vh;
     }
     .letter-front__MORY{
-        margin-left: 150px;
+        height: 20vh;
     }
     .letter-front__RY{
-        margin-left: 130px;
+        height: 20vh;
     }
     .letter-front__MEMORY{
-        margin-left: 200px;
-    }
-    .letter-front__Middle {
-        margin: 6vh 0;
-    }
+        height: 20vh;
+    }   
 }
 @media screen and (max-width: 480px) {
     html, body{
