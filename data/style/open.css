@@ -80,11 +80,13 @@
         height: 22vh;
         display: flex;
     }
-
     /*MEMORY 글자 위치*/
     .section__letter-front {
+        position:absolute;
         display: flex;
+        flex-direction: column;
         margin-top:14vh;
+        margin-left: 500px;
     }
     .letter-front__Top {
         margin-left: 400px;
@@ -162,10 +164,3 @@
         font-size: 1rem;
     }
 }
-.letter-front__Top,
-  .letter-front__Middle,
-  .letter-front__Bottom {
-    transition: ease 0.7s;
-    height: 27vh;
-    display: flex;
-  }
