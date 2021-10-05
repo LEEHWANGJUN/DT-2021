@@ -22,6 +22,7 @@ a {
   }
   .header__PC {
     width: 96vh;
+    margin: 2vh 0 2vh 0;
     height: 60px;
     position: absolute;
     left: 0%;
@@ -105,10 +106,9 @@ a {
     background: url(../images/bg/texture.png) local;
     white-space: nowrap;
     height: 96vh;
-    overflow: auto;
     display: flex;
     align-items: center;
-    margin: 2vh 0 2vh 60px;
+    padding: 2vh 0 2vh 60px;
     font-size: 1.5rem;
     scroll-behavior: smooth;
     overflow-y: hidden;
@@ -159,21 +159,28 @@ a {
   }
   .header__Mobile {
     position: fixed;
+    display: flex;
     top: 0;
     width: 100vw;
     margin: auto;
     height: 60px;
     align-items: center;
-    border-bottom: solid 1px #000;
+    /* border-bottom: solid 0.5px #000; */
     background: url(../images/bg/texture.png);
     z-index: 1;
   }
   .navi__logo {
-    margin: auto;
+    margin: 0 0 0 20px;
     padding: 15px 0;
     width: 140px;
     height: 30px;
     text-align: center;
+  }
+  .underline {
+    border-bottom: 2px solid #000;
+    transform: translate(-17px, -2px);
+    width: 350px;
+    height: 30px;
   }
   .sidebar {
     width: 300px;
@@ -183,7 +190,7 @@ a {
     background-color: #000;
     position: fixed;
     top: 0;
-    left: -300px;
+    right: -300px;
     padding-top: 60px;
     z-index: 2;
     transition: all 0.35s;
@@ -240,7 +247,7 @@ a {
     width: 20px;
     height: 18px;
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 20px;
     cursor: pointer;
     transition: all 0.35s;
@@ -280,14 +287,14 @@ a {
   }
 
   input[id="sidebar-icon"]:checked ~ .sidebar {
-    left: 0;
+    right: 0;
   }
 
   .contents {
     margin-top: 60px;
   }
   .scroll-section {
-    width: 100vw; 
+    width: 100vw;
   }
   .section-title {
     width: 100vw;
