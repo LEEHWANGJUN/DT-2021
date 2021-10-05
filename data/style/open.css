@@ -43,19 +43,28 @@
   }
   .introduce {
     font-size: 1.6rem;
+    animation-duration: 2s;
+    animation-name: slidein;
   }
+  
   .exhibi {
     line-height: 4vh;
         margin-top: 4rem;
         font-size: 1.6rem;
+        animation-duration: 2.5s;
+    animation-name: slidein;
   }
   .open-web {
     line-height: 8vh;
         font-size: 8vh;
+        animation-duration: 3.0s;
+    animation-name: slidein;
   }
   .opening-date {
     margin-bottom: 0.8rem;
         font-size: 1.8rem;
+        animation-duration: 4.0s;
+    animation-name: slidein;
   }
   .bolder {
     font-weight: bolder;
@@ -66,10 +75,16 @@
         font-size: 1.6rem;
         line-height: 1.7rem;
         font-weight: normal;
+
+        
+        animation-duration: 4.5s;
+    animation-name: slidein;
   }
   .opening-place {
     font-weight:900;
-    font-size: 6vh;
+    font-size: 6vmin;
+    animation-duration: 5s;
+    animation-name: slidein;
   }
 
   .letter-front {
@@ -83,20 +98,22 @@
   }
   /*MEMORY 글자 위치*/
   .section__letter-front {
-    position: absolute;
+    position: right;
     display: flex;
     flex-direction: column;
     margin-top: 14vh;
-    margin-left: 500px;
+    margin-left: -15vw;
+    animation-duration: 3s;
+    animation-name: slidein2;
   }
   .letter-front__Top {
-    margin-left: 400px;
+    margin-left: 200px;
   }
   .letter-front__MORY {
-    margin-left: 150px;
+    margin-left: 0px;
   }
   .letter-front__RY {
-    margin-left: 130px;
+    margin-left: 300px;
   }
   .letter-front__MEMORY {
     margin-left: 200px;
@@ -177,4 +194,24 @@
   .opening-time {
     font-size: 1rem;
   }
+}
+@keyframes slidein {
+    from {
+      opacity: 0%;
+      margin-left: 10%;
+    }
+  
+    to {
+        opacity: 100%;
+      margin-left: 0%;
+    }
+  }
+@keyframes slidein2 {
+from {
+    opacity: 0%;
+}
+
+to {
+    opacity: 100%;
+}
 }
