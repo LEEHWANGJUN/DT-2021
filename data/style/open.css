@@ -64,42 +64,50 @@
         font-size: 6vh;
     }
     
-    .letter-front{
-        height: 100%;
-    }
-    .height_ {
+    .letter-front {
         pointer-events: none;
-        transition: ease 0.7s;  
-        height: 20vh;
-    }
-    
-    /*MEMORY 글자 위치*/
-    .section__letter-front {
-        position:absolute;
-        width: 100%;
+        height: 100%;
+      }
+      .height_ {
+        transition: ease 0.7s;
+        height: 22vh;
         display: flex;
-        justify-content: flex-end;
+      }
+      /*MEMORY 글자 위치*/
+      .section__letter-front {
+        position: absolute;
+        display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        /*
-        justify-content: flex-end;
-        */
-    }
-    .letter-front__ME{
-        height: 20vh;
-    }
-    .letter-front__MEMO{
-        height: 20vh;
-    }
-    .letter-front__MORY{
-        height: 20vh;
-    }
-    .letter-front__RY{
-        height: 20vh;
-    }
-    .letter-front__MEMORY{
-        height: 20vh;
-    }   
+        margin-top: 14vh;
+        margin-left: 500px;
+      }
+      .letter-front__Top {
+        margin-left: 400px;
+      }
+      .letter-front__MORY {
+        margin-left: 150px;
+      }
+      .letter-front__RY {
+        margin-left: 130px;
+      }
+      .letter-front__MEMORY {
+        margin-left: 200px;
+      }
+      .letter-front__Middle {
+        margin: 6vh 0;
+      }
+      .letter-front__blur {
+        opacity: 100%;
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        transition: all 1s;
+      }
+      .letter-front__blur:hover {
+        opacity: 0%;
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+        transition: all 1s ease-in-out;
+      }
 }
 @media screen and (max-width: 480px) {
     html, body{
