@@ -301,9 +301,8 @@
   .letter-front__Middle,
   .letter-front__Bottom {
     transition: ease 0.7s;
-    width: 100%;
-    height: 30%;
-    display: inline-flex;
+    height: 5vh;
+    display: flex;
   }
   .letter-front {
     pointer-events: none;
