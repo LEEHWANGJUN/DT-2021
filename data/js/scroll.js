@@ -8,10 +8,9 @@ const sectionIdList = document.querySelectorAll('.section-divider');
 const scrollbarDefaultMargin = window.innerWidth/5;
 
 function horizontalScroll(event){  // 마우스휠 가로스크롤
-  scrollbar.scrollLeft -= event.wheelDelta*2;
   event.preventDefault();
-  console.log(scrollbar.scrollTop);
-  scrollBarNow(scrollbar.scrollLeft);
+  scrollbar.scrollLeft -= event.wheelDelta*3;
+  scrollBarNow(scrollbar.scrollLeft-event.wheelDelta*3);
 }
 
 function scrollAnimation(){  // 스크롤 후 나타나는 애니메이션
@@ -75,9 +74,11 @@ function scrollBarNow(scrollbarLeft){   // 하단 스크롤바 현재 위치 표
       toggleNow(0);
     }else if(sectionIdList[sectionIdList.length-1].offsetLeft<scrollbarPos){
       toggleNow(sectionIdList.length-1);
-    }else if(sectionIdList[i].offsetLeft<=scrollbarPos && scrollbarPos<=sectionIdList[i+1].offsetLeft){
-      toggleNow(i);
-      console.log(sectionIdList[i].offsetLeft,scrollbarPos);
+    }
+    if(i!=0 && i!=sectionIdList.length-1){
+      if(sectionIdList[i].offsetLeft<=scrollbarPos && scrollbarPos<=sectionIdList[i+1].offsetLeft){
+        toggleNow(i);
+      }
     }
   }
 }
@@ -85,18 +86,40 @@ function scrollBarNow(scrollbarLeft){   // 하단 스크롤바 현재 위치 표
 function pageScroll(){  // 하단 스크롤 위치 눌러서 스크롤
     var scrollTarget = document.querySelector(this.dataset.target);
     scrollbar.scrollTo({left:scrollTarget.offsetLeft - scrollbarDefaultMargin, behavior:'smooth'});
-    scrollBarNow();
+    scrollBarNow(scrollTarget.offsetLeft-scrollbarDefaultMargin);
 }
 
-window.addEventListener('wheel',horizontalScroll, {passive: false});
+function throttle(callback, limit) {
+  let waiting = false;
+  return function() {
+      if(!waiting) {
+          callback.apply(this, arguments);
+          waiting = true;
+          setTimeout(() => {
+              waiting = false;
+          }, limit)
+      }
+  }
+}
+function debounce(callback, limit) {
+  let timeout;
+  return function(...args) {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => {
+          callback.apply(this, args)
+      }, limit)
+  }
+}
+
+scrollBarNow(scrollbar.scrollLeft);
+
+
+window.addEventListener('wheel',debounce(horizontalScroll,100), {passive: false});
+
 for(let i=0;i<scrollDividerList.length;i++){
   scrollDividerList[i].addEventListener('click', pageScroll, true);
 }
 window.addEventListener('load', scrollAnimation,true);
-window.addEventListener('wheel', scrollAnimation,true);
+window.addEventListener('mousewheel', scrollAnimation,true);
 window.addEventListener('scroll', scrollAnimation,true);
 window.addEventListener('keydown',scrollAnimation,true);
-
-window.addEventListener('click', function(){
-  console.log(scrollbar.scrollLeft);
-});
