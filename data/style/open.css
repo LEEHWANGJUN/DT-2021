@@ -103,7 +103,7 @@
 }
 @media screen and (max-width: 480px) {
     html, body{
-        font-family: 'Apple SD Gothic Neo', 'sans-serif';
+        font-family: 'Apple SD Gothic Neo', 'Spoqa Han Sans Neo', 'sans-serif';
         overflow-x: hidden;
         background: url(../images/bg/texture.png);
         text-align: center;
