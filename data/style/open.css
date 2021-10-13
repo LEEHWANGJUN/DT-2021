@@ -52,7 +52,8 @@
   .exhibi {
     line-height: 4vh;
         margin-top: 4rem;
-        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
         animation-duration: 2.5s;
     animation-name: slidein;
   }
@@ -62,10 +63,16 @@
         animation-duration: 3.0s;
     animation-name: slidein;
   }
+  .opening-offline {
+    font-size: 1.8rem;
+    font-weight:500;
+    animation-duration: 4.0s;
+    animation-name: slidein;
+  }
   .opening-date {
     margin-bottom: 0.8rem;
-        font-size: 1.8rem;
-        animation-duration: 4.0s;
+    font-size: 1.8rem;
+    animation-duration: 4.0s;
     animation-name: slidein;
   }
   .bolder {
@@ -105,7 +112,7 @@
     flex-direction: column;
     margin-top: 14vh;
     margin-left: -15vw;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein2;
   }
   .letter-front__Top {
@@ -144,6 +151,9 @@
     margin: 4vw;
   }
   .section__letter-front {
+    
+    animation-duration: 5s;
+    animation-name: slidein2;
     margin-top: auto;
   }
   .scroll-section {

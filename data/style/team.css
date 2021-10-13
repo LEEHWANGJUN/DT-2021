@@ -16,7 +16,7 @@
   font-size: 1.7rem;
   font-family: 'Apple SD Gothic Neo','Spoqa Han Sans Neo', 'sans-serif';
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 480px) {
   .team_margin {
     flex-direction: row;
     margin-left: 50px;
@@ -41,17 +41,20 @@
       width: 100%;
       height: 29vh;
       display:table;
-      font-size: 5vmin;
-      font-weight: 700;
       padding-top: 4vh;
       margin-right: 150px;
       margin-bottom: 4vh;
-      
+    }
+    .concept_title{
+      font-size: 5vmin;
+      font-weight: 700;
+      margin-top: 10px;
     }
     .concept{
       color: #00000077;
       font-size: 2vmin;
       font-weight: 400;
+      margin-bottom: 1px;
     }
     .concept_text {
       margin-top: 1vmin;
@@ -59,6 +62,9 @@
       width: 500px;
       font-weight: 400;
       font-size: 16px;
+    }
+    .mobile_team_members{
+      display: none;
     }
     .team_members {
       color: #999999;
@@ -248,26 +254,32 @@
       text-align: left;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
+  .concept{
+    line-height: 2.8rem;
+  }
+  .mobile_none{
+    display: none;
+  }
   .team_margin {
     flex-direction: column;
     width: 100%;
   }
   .team {
-    text-align: left;
     flex-direction: column;
     width: 100%;
+    font-size : 1.3rem;
+    line-height: 1.8rem;
     white-space: normal;
     box-sizing: border-box;
     padding-left: 16px;
     padding-right: 16px;
-      /*width: 800px;*/
+    text-align: center;
     }
     .team_name {
       font-family: 'Bodoni 11'; 
       width: 100%;
-      margin-top: 12vh;
-      height: 15vh;
+      margin-top: 150px;
       font-size: 7vmin;
       font-weight: 600;
       display:table;
@@ -276,16 +288,15 @@
       width: 100%;
       height: 29vh;
       display:table;
-      font-size: 5vmin;
+      font-size: 1.8rem;
       font-weight: 700;
       padding-top: 4vh;
       margin-right: 150px;
       margin-bottom: 4vh;
-      
     }
     .concept{
       color: #00000077;
-      font-size: 2vmin;
+      font-size: 1.3rem;
       font-weight: 400;
     }
     .concept_text {
@@ -293,58 +304,54 @@
       margin-top: 1vmin;
       color: #999999;
       font-weight: 400;
-      font-size: 16px;
+      font-size : 1.3rem;
       white-space: normal;
       box-sizing: border-box;
     }
-    .team_members {
+    .mobile_team_members{
       color: #999999;
       width: 100%;
       height: 16vh;
-      margin-bottom: 12vh;
       /*margin-left: 120px;*/
       font-weight: 600;
       font-size: 16px;
     }
+    .team_members {
+      display: none;      
+    }
     .members_list{
+      display: flex;
+      justify-content: center;
       list-style:none;
+      font-size: 1.4rem;
     }
     .members_go{
       font-weight: 400;
-      margin-right: 10px;
-      float: left;
+      margin: 0.6rem;
     }
     
     .middle_box {
-      display:table-cell;
-      vertical-align:middle;
     }
     
     
     .team_film {
-      width: 100%;
       margin-top: 13vh;
-      height: 15vh;
-      font-size: 3vmin;
+      height: auto;
+      font-size: 1.8rem;
       font-weight: 700;
-      display:table;
     }
     .team_film_title {
-      width: 100%;
-      margin-top: 10vh;
-      height: 10vh;
-      display:table;
-      font-size: 4vmin;
+      margin-top: auto;
+      height: auto;
+      font-size : 2.0rem;
       font-weight: 700;
     }
     .team_film_text {
       color: #999999;
       width: 100%;
-      height: 35vh;
-      margin-bottom: 13vh;
-      font-size: 16px;
-      display: flex;
-      align-items: flex-end;
+      height: auto;
+      margin-bottom: auto;
+      font-size : 1.3rem;
     }
 
     
@@ -355,41 +362,33 @@
       .team_interactive {
         width: 100%;
         margin-top: 13vh;
-        height: 20vh;
-        font-size: 3vmin;
+        height: auto;
+        font-size: 1.8rem;
         font-weight: 700;
-        display:table;
-        text-align: left;
       }
       .team_interactive_image_1{
         width: 100%;
         /* height: 50vh; */
-        margin-bottom: 13vh;
+        margin-bottom: auto;
       }
       .team_interactive_title {
         width: 100%;
-        margin-top: 13vh;
-        height: 6vh;
-        font-size: 4vmin;
+        margin-top: auto;
+        height: auto;
+        font-size: 2.0rem;
         font-weight: 700;
-        text-align: left;
       }
       .team_interactive_text {
         margin-top: 2vh;
         color: #999999;
         width: 100%;
-        height: 28vh;
-        
-        font-size: 16px;
-        text-align: left;
+        height: auto;
+        font-size: 1.3rem;
       }
       .team_interactive_step{
         width: 100%;
-        height: 34vh;
+        height: auto;
         margin-bottom: 13vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
       }
       .step{
         margin-right: 10px;
@@ -400,23 +399,17 @@
       }
       
     .border{
+      display: none;
       height: 96vh;
       border-bottom: solid 1px #777;
     }
     .individual{
       /*margin-left: 200px;*/
-      padding-right: 30px;
-      font-size: 16px;
-      text-align: left;
-      display: flex;
-      align-items:center;
-      height: 96vh;
-      border-right: solid 1px #777;
+      font-size: 1.3rem;
     }
     .individual_line{
       /*margin-left: 50px;*/
-      height: 70vh;
-      border-right: solid 1px #777;
+      height: 0vh;
     }
 
 
@@ -431,30 +424,29 @@
       width: 100%;
       height: 31vh;
       margin-bottom: 13vh;
-      text-align: left;
     }
     .team_indivi_text_eng {
       color: #999999;
       width: 100%;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.3rem;
     }
     .team_indivi_text1 {
       color: #000000;
       width: 100%;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 1.6rem;
     }
     .team_indivi_text2 {
       color: #000000;
       width: 100%;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 2.0rem;
     }
     .team_indivi_text3 {
       color: #999999;
       width: 100%;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.3rem;
     }
 }
