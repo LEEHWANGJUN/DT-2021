@@ -18,7 +18,9 @@ body{
 	margin: 0 0 0 30px;
 	height: 96vh;
   }
-
+  .name{
+	margin-left:50px;
+}
   .opening-date {
 	margin-bottom: 20px;
 	font-size: 2.5rem;
@@ -36,9 +38,8 @@ body{
   }
   #person{
 	position: relative;
-	width: 500px;
-	height: 550px;
-	margin: 0 50px;
+	height: 55vh;
+	width: 52vh;
 	align-items: center;
   }
   #person img{
@@ -46,10 +47,18 @@ body{
 	width: 100%; height: 100%; object-fit: cover; margin: auto;
 
   }
-  .individual_img{
-	  width: 600px;
-	  height: 750px;
-	  margin-right:200px;
+  .individual_img{position: relative;
+	  height:  85vh;
+	  width: 65vh;
+	  align-items: center;
+  }
+  .individual_img img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
+
+  }
+  .section-title{
+	margin-left:200px;
   }
   .inter_img{
 	  width: 800px;
@@ -85,6 +94,7 @@ body{
   }
   #email{
 	  margin : 50px 0;
+	  margin-left:50px;
   }
   .work_information{
 	  transform: translateY(3rem);
@@ -124,7 +134,7 @@ body{
 	  font-size:3rem;
   }
   .mom_touch{
-	  margin:200px 0;
+	  margin:20vh 0;
 	  letter-spacing: 3px;
 	  font-weight: bold;
 	  font-size:2.5rem;
@@ -153,8 +163,15 @@ body{
   .howinter{
 	  margin: 0 200px;
   }
-  #howto_img{
+  #howto_img{position: relative;
 	  margin-right: 80px;
+	  height:50vh;
+	  width:80vh;
+  }
+  
+ #howto_img img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
   }
   .howto{
 	  letter-spacing: 5px;
@@ -171,8 +188,15 @@ body{
 	  margin : 50px 0;
   }
   .sequence{
+	position: relative;
 	  margin-top : 50px;
+	  height:25vh;
+	  width:40vh;
 	  margin-right : 30px;
+  }
+  .sequence img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
   }
   .inter_how{
 	  margin-bottom: 100px;
