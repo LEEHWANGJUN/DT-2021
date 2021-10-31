@@ -72,14 +72,14 @@ function scrollBarNow(scrollbarLeft){   // 하단 스크롤바 현재 위치 표
   for(let i=0;i<sectionIdList.length;i++){
     if(scrollbarPos<sectionIdList[1].offsetLeft){
       toggleNow(0);
-    }else if(sectionIdList[sectionIdList.length-1].offsetLeft<scrollbarPos){
+    }
+    else if(sectionIdList[sectionIdList.length-1].offsetLeft<scrollbarPos){
       toggleNow(sectionIdList.length-1);
     }
-    if(i!=0 && i!=sectionIdList.length-1){
-      if(sectionIdList[i].offsetLeft<=scrollbarPos && scrollbarPos<=sectionIdList[i+1].offsetLeft){
+    else if(sectionIdList[i].offsetLeft<=scrollbarPos && scrollbarPos<=sectionIdList[i+1].offsetLeft){
         toggleNow(i);
       }
-    }
+    
   }
 }
 
