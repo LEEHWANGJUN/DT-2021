@@ -38,8 +38,8 @@ body{
   }
   #person{
 	position: relative;
-	height: 55vh;
-	width: 52vh;
+	height: 60vh;
+	width: 45vh;
 	align-items: center;
   }
   #person img{
@@ -134,11 +134,12 @@ body{
 	  font-size:3rem;
   }
   .mom_touch{
-	  margin:20vh 0;
+	  margin:27vh 0;
 	  letter-spacing: 3px;
 	  font-weight: bold;
-	  font-size:2.5rem;
+	  font-size:2rem;
 	  white-space:normal;
+	  word-break:break-all;
   }
   .touch_information{
 	  margin:10px 0;
@@ -165,8 +166,8 @@ body{
   }
   #howto_img{position: relative;
 	  margin-right: 80px;
-	  height:50vh;
-	  width:80vh;
+	  height:72vh;
+	  width:48vh;
   }
   
  #howto_img img{
@@ -177,29 +178,36 @@ body{
 	  letter-spacing: 5px;
 	  font-weight: 600;
 	  font-size:2rem;
+	  width:200px;
+	  white-space: normal;
+	  word-break:keep-all;
   }
   .howto_explain{
 	  align-items: center;
-	  font-size:1.5rem;
+	  font-size:1.2rem;
 	  margin : 0 20px ;
   }
   .how{
 	  display: flex;
-	  margin : 50px 0;
+	  margin : 12vh 0;
   }
   .sequence{
 	position: relative;
 	  margin-top : 50px;
 	  height:25vh;
 	  width:40vh;
-	  margin-right : 30px;
+	  /*
+	  height:20vh;
+	  width:32vh;
+	  */
+	  margin : 0 30px;
   }
   .sequence img{
 	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
 	width: 100%; height: 100%; object-fit: cover; margin: auto;
   }
   .inter_how{
-	  margin-bottom: 100px;
+	  margin-bottom: 10vh;
 	  text-align: left;
 	  letter-spacing: 4px;
 	  width:200px;
@@ -213,7 +221,12 @@ body{
   }
   .sequence_ex{
 	  text-align: center;
-	  margin-top: 20px;
+	  font-size:1.2rem;
+	  margin-top: 2vh;
+	  width:40vh;
+	  white-space:normal;
+	  word-break:break-all;
+	  margin : 0 15px;
   }
   .sa-up {
 	transform: translate(0, 70px);
@@ -273,6 +286,15 @@ body{
 		margin-top:100px;
 		margin: 0 16px;
 	}
+	#person_mobile{
+	  position: relative;
+	  height:40vh;
+	  width:40vh;
+  }
+  #person_mobile img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
+  }
 	.name{
 		display: flex;
 		flex-direction: row;
