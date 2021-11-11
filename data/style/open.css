@@ -37,23 +37,43 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 3vh;
     height: 96vh;
+    width: 50%;
   }
   .introduce {
-    font-size: 2.3rem;
-    margin-top: 1.8rem;
+    font-size: 1.6rem;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  .introduce_mobile{
+    display: none;
   }
   .exhibi {
-    margin-top: 4rem;
-    font-size: 3rem;
+    line-height: 4vh;
+        margin-top: 4rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        animation-duration: 2.5s;
+    animation-name: slidein;
   }
   .open-web {
-    font-size: 6rem;
+    line-height: 8vh;
+        font-size: 8vh;
+        animation-duration: 3.0s;
+    animation-name: slidein;
+  }
+  .opening-offline {
+    font-size: 1.8rem;
+    font-weight:500;
+    animation-duration: 4.0s;
+    animation-name: slidein;
   }
   .opening-date {
     margin-bottom: 0.8rem;
-    font-size: 2.7rem;
+    font-size: 1.8rem;
+    animation-duration: 4.0s;
+    animation-name: slidein;
   }
   .bolder {
     font-weight: bolder;
@@ -61,12 +81,19 @@
   }
   .opening-time {
     margin-bottom: 1.8rem;
-    font-size: 2.2rem;
-    font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+        font-weight: normal;
+
+        
+        animation-duration: 4.5s;
+    animation-name: slidein;
   }
   .opening-place {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+    font-weight:900;
+    font-size: 6vmin;
+    animation-duration: 5s;
+    animation-name: slidein;
   }
 
   .letter-front {
@@ -80,20 +107,22 @@
   }
   /*MEMORY 글자 위치*/
   .section__letter-front {
-    position: absolute;
+    position: right;
     display: flex;
     flex-direction: column;
     margin-top: 14vh;
-    margin-left: 500px;
+    margin-left: -15vw;
+    animation-duration: 5s;
+    animation-name: slidein2;
   }
   .letter-front__Top {
-    margin-left: 400px;
+    margin-left: 200px;
   }
   .letter-front__MORY {
-    margin-left: 150px;
+    margin-left: 0px;
   }
   .letter-front__RY {
-    margin-left: 130px;
+    margin-left: 300px;
   }
   .letter-front__MEMORY {
     margin-left: 200px;
@@ -101,18 +130,7 @@
   .letter-front__Middle {
     margin: 6vh 0;
   }
-  .letter-front__blur {
-    opacity: 100%;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: all 1s;
-  }
-  .letter-front__blur:hover {
-    opacity: 0%;
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
-    transition: all 1s ease-in-out;
-  }
+  
 }
 @media screen and (max-width: 480px) {
   html,
@@ -133,6 +151,9 @@
     margin: 4vw;
   }
   .section__letter-front {
+    
+    animation-duration: 5s;
+    animation-name: slidein2;
     margin-top: auto;
   }
   .scroll-section {
@@ -141,27 +162,50 @@
   .height_ {
     justify-content: center;
     display: flex;
+    height: 22vw;
+  }
+  
+  .letter-front__Top {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .letter-front__MORY {
+    margin-left: 0px;
+  }
+  .letter-front__RY {
+    margin-left: 30px;
+  }
+  .letter-front__MEMORY {
+    margin-left: 20px;
   }
   .letter-front__Middle {
-    margin: 2rem 0;
+    margin: 2vh 0;
   }
   .letter-front {
     pointer-events: none;
     flex-basis: auto;
-    width: 100%;
-    height: 10vh;
+    height: 20vw;
   }
   .introduce {
+    display: none;
+  }
+  .introduce_mobile{
     font-size: 1rem;
+    animation-duration: 1.5s;
+    animation-name: slidein;
   }
   .exhibi {
     margin-top: 3rem;
     font-size: 1.1rem;
+    animation-duration: 2.5s;
+    animation-name: slidein;
   }
   .open-web {
     font-size: 2.8rem;
     line-height: 3.3rem;
     margin-top: 0.5rem;
+    animation-duration: 3.0s;
+    animation-name: slidein;
   }
   .bolder {
     font-weight: bolder;
@@ -170,8 +214,55 @@
   .open_information {
     margin-top: 3rem;
     text-align: right;
+    animation-duration: 3.5s;
+    animation-name: slideinR;
   }
   .opening-time {
+    animation-duration: 3.5s;
+    animation-name: slideinR;
     font-size: 1rem;
   }
+}
+.letter-front__blur {
+  opacity: 100%;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition: all 1s;
+}
+.letter-front__blur:hover {
+  opacity: 0%;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  transition: all 1s ease-in-out;
+}
+@keyframes slidein {
+    from {
+      opacity: 0%;
+      margin-left: 10%;
+    }
+  
+    to {
+        opacity: 100%;
+      margin-left: 0%;
+    }
+  }
+  @keyframes slideinR {
+    from {
+      opacity: 0%;
+      margin-right: 10%;
+    }
+  
+    to {
+        opacity: 100%;
+      margin-right: 0%;
+    }
+  }
+@keyframes slidein2 {
+from {
+    opacity: 0%;
+}
+
+to {
+    opacity: 100%;
+}
 }
