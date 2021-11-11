@@ -92,13 +92,13 @@
   .arrow span {
     display: block;
     position: absolute;
-    width: 120px;
+    width: 112px;
     height: 2px;
     background: #000;
   }
   .arrow span:nth-child(1) {
     width: 15px;
-    transform: translate(108px, 4px) rotate(45deg);
+    transform: translate(100px, 4px) rotate(45deg);
     top: 0;
   }
   .arrow span:nth-child(2) {
@@ -107,7 +107,7 @@
   }
   .arrow span:nth-child(3) {
     width: 15px;
-    transform: translate(108px, -4px) rotate(-45deg);
+    transform: translate(100px, -4px) rotate(-45deg);
     bottom: 0;
   }
 
@@ -160,26 +160,27 @@
     -webkit-filter: blur(6px);
     transition: all 1s ease-in-out;
   }
+
   .letter-end__1 {
-    margin-left: -3vw;
+    margin-left: 0vw;
   }
-  .letter-end__1 .letter-end__blur {
-    margin-right: 5vw;
-  }
-  .letter-end__2 {
-    margin-left: 2vw;
-  }
-  .letter-end__2 .letter-end__blur:nth-child(2) {
+  .letter-end__1 .letter-end__blur:nth-child(2) {
     margin-right: 10vw;
   }
-  .letter-end__3 {
-    margin-left: 5vw;
+  .letter-end__2 {
+    margin-left: 0vw;
   }
-  .letter-end__3 .letter-end__blur:nth-child(4) {
+  .letter-end__2 .letter-end__blur:nth-child(4) {
     margin-right: 15vw;
   }
-  .letter-end__4 .letter-end__blur {
+  .letter-end__3 .letter-end__blur {
     margin-right: 0vw;
+  }
+  .letter-end__4 {
+    margin-left: 0vw;
+  }
+  .letter-end__4 .letter-end__blur {
+    margin-right: 5vw;
   }
   /****** 어바웃 인트로 ******/
   .section__about__start div {

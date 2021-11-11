@@ -200,63 +200,11 @@
             </ul>
         </div>
     </header>
-    <div class="navi-second">
-        <dl class="navi-second__dl">
-            <dt class="navi-second__dt"><a href="/data/pages/works_me_team.html">Me</a></dt>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">2</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">3</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">4</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">5</a>
-            </dd>
-        </dl>
-        <dl class="navi-second__dl">
-            <dt class="navi-second__dt"><a href="/data/pages/works_me_team.html">Memo</a></dt>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">1</a>
-            </dd>
-        </dl>
-        <dl class="navi-second__dl">
-            <dt class="navi-second__dt"><a href="/data/pages/works_me_team.html">Memory</a></dt>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">김민송</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">박수빈</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">서혜인</a>
-            </dd>
-            <dd class="navi-second__dd">
-                <a href="/data/pages/works_me_team.html">이우진</a>
-            </dd>
-        </dl>
-    </div>
+    
     <div class="contents">
         <div class="team_margin">
         </div>
-        <div class="team">
+        <div class="team section-divider" id="section__team">
             <div class="team_name">
                 <div>ME TEAM</div>
             </div>
@@ -271,20 +219,20 @@
             </div>
             <div class="team_members">
                 <div><span class="concept">MEMBERS</span></div>
-                <ui class="members_list">
+                <ul class="members_list">
                     <li class="members_go"><a href="#mem_1" >김나영</a></li>
                     <li class="members_go"><a href="#mem_2" >김나영</a></li>
                     <li class="members_go"><a href="#mem_3" >김나영</a></li>
                     <li class="members_go"><a href="#mem_4" >김나영</a></li>
                     <li class="members_go"><a href="#mem_5" >김나영</a></li>
-                </ui>
+                </ul>
             </div>
         </div>
-        <div class="team">
+        <div class="team section-divider" id="section__film">
             <div class="team_film">
                 TEAM FILM
             </div>
-            <div class="team_film_title">
+            <div class="team_film_title" >
                 <div class="middle_box">들여다보다</div>
                 </div>
             <div class="team_film_text">
@@ -323,7 +271,7 @@
             <div class="border">  </div>
         </div>
         <div class="team">
-            <div class="team_interactive">
+            <div class="team_interactive section-divider" id="section__inter">
                 TEAM<br>INTERACTIVE<br>ART
             </div>
             <div>
@@ -351,7 +299,7 @@
         </div>
         
         <div class="team">
-            <div class="individual">INDIVIDUAL</div>
+            <div class="individual section-divider" id="section__members">INDIVIDUAL</div>
         </div>
         
         <div class="team">
@@ -451,11 +399,26 @@
                 </p>
             </div>
         </div>
+        <div class="scroll-section section-divider" id="section__end">
+        </div>
     </div>
-    
+    <div class="scroll-bar">
+        <div class="scroll-bar__margin"></div>
+        <div class="scroll-bar__divider"><a class="scroll-bar__divider__name now" data-target="#section__team">Team</a></div>
+        <div class="scroll-bar__main">
+            <div class="scroll-bar__section"></div>
+            <div class="scroll-bar__divider"><a class="scroll-bar__divider__name" data-target="#section__film">Film</a></div>
+            <div class="scroll-bar__section"></div>
+            <div class="scroll-bar__divider"><a class="scroll-bar__divider__name" data-target="#section__inter">Interactive Art</a></div>
+            <div class="scroll-bar__section"></div>
+            <div class="scroll-bar__divider"><a class="scroll-bar__divider__name" data-target="#section__members">Members</a></div>
+            <div class="scroll-bar__section"></div>
+        </div>
+        <div class="scroll-bar__divider"><a class="scroll-bar__divider__name" data-target="#section__end">End</a></div>
+        <div class="scroll-bar__margin"></div>
+    </div>
 </body>
 <script src="../js/scroll.js"></script>
 <script src="../js/header.js"></script>
-<script src="../js/about.js"></script>
 <script src="../js/iframe.js"></script>
 </html>
