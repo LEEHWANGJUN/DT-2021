@@ -47,16 +47,30 @@ body{
 	width: 100%; height: 100%; object-fit: cover; margin: auto;
 
   }
-  .individual_img{position: relative;
-	  height:  85vh;
-	  width: 65vh;
+  .individual_img{
+	  position: relative;
+	  height:  80vh;
+	  width: 60vh;
 	  align-items: center;
   }
+  
   .individual_img img{
 	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
 	width: 100%; height: 100%; object-fit: cover; margin: auto;
 
   }
+  .square_poster{
+	position: relative;
+	height:  60vh;
+	width: 60vh;
+	align-items: center;
+	}
+
+	.square_poster img{
+	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	width: 100%; height: 100%; object-fit: cover; margin: auto;
+
+	}
   .section-title{
 	margin-left:200px;
   }
@@ -99,7 +113,6 @@ body{
   .work_information{
 	  transform: translateY(3rem);
 	  animation: fadein 2s, up 500ms linear forwards;
-	  
 	  margin : 0 300px;
   }
   #concept{
@@ -134,13 +147,29 @@ body{
 	  font-size:3rem;
   }
   .mom_touch{
-	  margin:27vh 0;
+	  margin:24vh 0;
 	  letter-spacing: 3px;
 	  font-weight: bold;
 	  font-size:2rem;
 	  white-space:normal;
 	  word-break:break-all;
   }
+  .toomuch_mom_touch{
+	margin:17vh 0;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size:2rem;
+	white-space:normal;
+	word-break:break-all;
+}
+  .mom_touch_square{
+	margin:16vh 0;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size:2rem;
+	white-space:normal;
+	word-break:break-all;
+}
   .touch_information{
 	  margin:10px 0;
 	  color : gray;
@@ -149,7 +178,16 @@ body{
 	  font-size:1.5rem;
 	  width: 180px;
 	  float: right;
-  }
+  } 
+  .toomuch_information{
+	margin:10px 0;
+	color : gray;
+	white-space: normal;
+	word-break:break-all;
+	font-size:1.5rem;
+	width: 240px;;
+	float: right;
+}
   .dd{
 	  margin:50px;
 	  text-align: right;
@@ -284,17 +322,16 @@ body{
 		line-height: 1.5rem;
 		text-align: center;   
 		margin-top:100px;
-		margin: 0 16px;
+		margin: 0 5vw;
 	}
 	#person_mobile{
-	  position: relative;
-	  height:40vh;
-	  width:40vh;
+	  height:65vw;
+	  width:65vw;
+	  margin-left: 12.5vw;
   }
-  #person_mobile img{
-	position: absolute; top: 0; left: 0; transform: translate(50, 50); 
-	width: 100%; height: 100%; object-fit: cover; margin: auto;
-  }
+	#person_mobile img{
+		width: 100%; height: 100%;
+	}
 	.name{
 		display: flex;
 		flex-direction: row;
@@ -306,12 +343,36 @@ body{
 		font-weight:bold;
 		margin-right: 15px;
 	}
+	
 	#email{
 		margin-top: 2px;
 		font-size:8px
 	}
 	.section{
 		margin-top: 100px;
+	}
+	.individual_img{
+		position: relative;
+		height: 80vw;
+		width: 60vw;
+		margin: 4vh 0;
+		margin-left: 15vw;
+	}
+	.individual_img img{
+	  position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	  width: 100%; height: 100%; object-fit: cover; margin: auto;
+	}
+
+	.square_poster{
+		position: relative;
+		height: 60vw;
+		width: 60vw;
+		margin: 4vh 0;
+		margin-left: 15vw;
+	}
+	.square_poster img{
+	  position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	  width: 100%; height: 100%; object-fit: cover; margin: auto;
 	}
 	.video_name{
 		margin:7px 0;
@@ -358,6 +419,17 @@ body{
 		font-size: 1.3rem;
 		font-weight:bold;
 	}
+	#howto_img{	
+		position: relative;
+		height: 80vw;
+		width: 60vw;		
+		margin-left: 15vw;
+
+	}
+	#howto_img img{
+	  position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	  width: 100%; height: 100%; object-fit: cover; margin: auto;
+	}
 	.how_mobile{
 		display: flex;
 		flex-direction: row;
@@ -368,10 +440,19 @@ body{
 		margin: 30px 0;
 	}
 	.sequence{
+		position: relative;
+		height:25vw;
+		width:40vw;
 		margin-left : 16px;
 	}
+	.sequence img{
+	  position: absolute; top: 0; left: 0; transform: translate(50, 50); 
+	  width: 100%; height: 100%; object-fit: cover; margin: auto;
+	}
 	.sequence_ex{
+		margin-top: 30px;
 		margin-left : 16px;
+		height:50px;
 	}
 	.mobile__img {
 		width: 100%;
