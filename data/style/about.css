@@ -124,7 +124,7 @@
   .letter-front,
   .letter-end {
     pointer-events: none;
-    height: 100%;
+    height: -webkit-fill-available;
   }
   .letter-front__Top,
   .letter-front__Middle,

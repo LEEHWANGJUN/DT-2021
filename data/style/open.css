@@ -98,7 +98,7 @@
 
   .letter-front {
     pointer-events: none;
-    height: 100%;
+    height: -webkit-fill-available;
   }
   .height_ {
     transition: ease 0.7s;
