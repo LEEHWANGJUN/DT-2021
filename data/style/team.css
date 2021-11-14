@@ -30,8 +30,8 @@
     .team_name {
       font-family: 'Bodoni 11', sans-serif;
       width: 100%;
-      margin-top: 12vh;
-      height: 15vh;
+      margin-top: 15vh;
+      height: 12vh;
       font-size: 7vmin;
       font-weight: 600;
       display:table;
@@ -39,7 +39,7 @@
     .team_title {
       /*margin-left: 60px;*/
       width: 100%;
-      height: 29vh;
+      height: 38vh;
       display:table;
       padding-top: 4vh;
       margin-right: 150px;
@@ -52,28 +52,31 @@
     }
     .concept{
       color: #00000077;
-      font-size: 2vmin;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
       font-weight: 400;
       margin-bottom: 1px;
     }
     .concept_text {
-      margin-top: 1vmin;
-      color: #999999;
+      margin-top: 3vmin;
+      color: gray;
       width: 500px;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
     }
     .mobile_team_members{
       display: none;
     }
     .team_members {
-      color: #999999;
+      color: gray;
       width: 500px;
-      height: 16vh;
+      height: 10vh;
       margin-bottom: 12vh;
       /*margin-left: 120px;*/
       font-weight: 600;
-      font-size: 16px;
+      font-size: 1.6rem;
+      
     }
     .members_list{
       list-style:none;
@@ -94,7 +97,7 @@
       width: 100%;
       margin-top: 13vh;
       height: 15vh;
-      font-size: 3vmin;
+      font-size: 3rem;
       font-weight: 700;
       display:table;
       text-align: right;
@@ -105,16 +108,18 @@
       margin-top: 10vh;
       height: 10vh;
       display:table;
-      font-size: 4vmin;
+      font-size: 3rem;
       font-weight: 700;
       text-align: right;
+      
     }
     .team_film_text {
-      color: #999999;
+      color: gray;
       width: 100%;
       height: 35vh;
       margin-bottom: 13vh;
-      font-size: 16px;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
       text-align: right;
       display: flex;
       align-items: flex-end;
@@ -131,48 +136,51 @@
       .team_interactive {
         width: 100%;
         margin-top: 13vh;
-        height: 20vh;
+        height: 10vh;
         font-size: 3vmin;
         font-weight: 700;
         display:table;
         text-align: left;
       }
       .team_interactive_image_1{
-        height: 50vh;
-        width: 37.5vh;
+        height: 60vh;
+        width: 40vh;
         margin-bottom: 13vh;
       }
       .team_interactive_title {
         width: 100%;
         margin-top: 13vh;
-        height: 6vh;
+        height: 8vh;
         font-size: 4vmin;
         font-weight: 700;
         text-align: left;
       }
       .team_interactive_text {
         margin-top: 2vh;
-        color: #999999;
+        color: gray;
         width: 100%;
-        height: 28vh;
-        
-        font-size: 16px;
+        height: 30vh;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
         text-align: left;
       }
       .team_interactive_step{
-        width: 120vh;
-        height: 34vh;
+        width: 1000px;
+        height: 30vh;
         margin-bottom: 13vh;
         display: flex;
         flex-wrap: wrap;
         align-content: flex-end;
+
       }
       .step{
         margin-right: 10px;
-        
+        font-size: 1.4rem;
+        line-height : 2rem;
+        text-align: center;
       }
       .step img{
-        height: 20vh;
+        height: 22vh;
         
       }
       
@@ -198,40 +206,38 @@
 
     .team_indivi_image{
       margin-top: 13vh;
-      height: 35vh;
+      width: 40vh;
     }
     
     .team_indivi {
-      margin-top: 4vh;;
+      margin-top: 2vh;;
       width: 100%;
       margin-bottom: 13vh;
       text-align: left;
     }
     .team_indivi_text_eng {
-      color: #999999;
-      width: 500px;
+      color: gray;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
     }
     .team_indivi_text1 {
       color: #000000;
-      width: 500px;
-      font-weight: 700;
-      font-size: 24px;
+      font-weight:bold;
+      font-size: 2.4rem;
     }
     .team_indivi_text2 {
-      margin-top: 10px;
+      margin-top: 3rem;
       color: #000000;
-      width: 500px;
-      font-weight: 500;
-      font-size: 16px;
+      font-weight: 700;
+      font-size: 1.8rem;
     }
     .team_indivi_text3 {
       margin-top: 5px;
-      color: #999999;
-      width: 500px;
+      color: gray;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.3rem;
+      line-height: 1.9rem;
     }
     
     .team_indivi_name {
@@ -254,9 +260,23 @@
     .pc_none{
       display: none;
     }
+    .offline{
+      color: #da3b3b;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    .link_indivi{
+      float: right;
+    }
 }
 @media screen and (max-width: 480px) {
-
+  .offline{
+    color: #da3b3b;
+    margin-top: 10px;
+    line-height: 1.4rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
   .mobile_none{
     display: none;
   }
@@ -279,7 +299,7 @@
       font-family: 'Bodoni 11', sans-serif; 
       width: 100%;
       margin-top: 150px;
-      font-size: 7vmin;
+      font-size: 3.5rem;
       font-weight: 600;
       display:table;
     }
@@ -303,14 +323,14 @@
     .concept_text {
       width: 100%;
       margin-top: 10px;
-      color: #999999;
+      color: gray;
       font-weight: 400;
       font-size : 1.3rem;
       white-space: normal;
     }
     .mobile_team_members{
       margin-top: 30px;
-      color: #999999;
+      color: gray;
       width: 100%;
       height: 16vh;
       /*margin-left: 120px;*/
@@ -331,10 +351,6 @@
       margin: 0.6rem;
     }
     
-    .middle_box {
-    }
-    
-    
     .team_film {
       margin-top: 100px;
       padding: 5px 0px;
@@ -344,6 +360,7 @@
     }
     .mob_border_bottom{
       border-bottom: 1px solid;
+      margin-bottom: 10px;
     }
     .team_film_title {
       margin: 10px 0px;
@@ -352,8 +369,8 @@
       font-weight: 700;
     }
     .team_film_text {
-      margin: 10px;
-      color: #999999;
+      margin-top: 10px;
+      color: gray;
       width: 100%;
       height: auto;
       margin-bottom: auto;
@@ -375,7 +392,7 @@
         font-weight: 700;
       }
       .team_interactive_image_1{
-        width: 100%;
+        width: 50%;
       }
       .team_interactive_title {
         width: 100%;
@@ -387,7 +404,7 @@
       .team_interactive_text {
         margin-top: 20px;
         margin-bottom: 40px;
-        color: #999999;
+        color: gray;
         width: 100%;
         height: auto;
         font-size: 1.3rem;
@@ -404,7 +421,7 @@
       }
       .step img{
         margin-top: 10px;
-        width: 40vw;
+        width: 80%;
       }
       
     .border{
@@ -436,7 +453,7 @@
     }
 
     .team_indivi_text_eng {
-      color: #999999;
+      color: gray;
       width: 100%;
       font-weight: 400;
       font-size: 1.3rem;
@@ -444,7 +461,7 @@
     .team_indivi_text1 {
       color: #000000;
       width: 100%;
-      margin: 5px 0px;
+      margin: 10px 0px;
       font-weight: 400;
       font-size: 1.8rem;
       letter-spacing: 5px;
@@ -453,15 +470,40 @@
       color: #000000;
       width: 100%;
       font-weight: 500;
-      margin: 5px 0px;
+      
+      margin: 10px 0px;
+      margin-top: 12px;
       font-size: 1.8rem;
       font-weight: 700;
     }
     .team_indivi_text3 {
       margin-top: 10px;
-      color: #999999;
+      color: gray;
       width: 100%;
       font-weight: 400;
       font-size: 1.3rem;
     }
+    .team_indivi_text3 br{
+      display: none;
+    }
+    .link_indivi{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
 }
+.link_indivi{
+  color: cornflowerblue; font-size: 1.3rem;
+}
+.sa-up {
+	transform: translate(0, 70px);
+  }
+  .sa-down {
+	transform: translate(0, -70px);
+  }
+  .sa-scaleUp {
+	transform: scale(0.7);
+  }
+  .sa-right {
+	transform: translate(-150px, 0);
+  }
