@@ -106,9 +106,16 @@ body{
 	  color : #444;
 	  justify-content: center;
   }
-  #email{
-	  margin : 50px 0;
-	  margin-left:50px;
+  .infor{
+	margin-top : 50px;
+	margin-left:50px;
+  }
+  .infor td {	  
+    padding-left: 2vh;
+  }
+  .infor td,
+  .infor th{
+	  padding-top:5px;
   }
   .work_information{
 	  transform: translateY(3rem);
@@ -122,9 +129,12 @@ body{
 	  font-size:2rem;
   }
   #work_name{
-	  font-size : 4rem;
+	  font-size : 3.5rem;
 	  font-weight: bolder;
 	  margin: 20px 0;
+  }
+  .blank{
+	  margin-left:300px;
   }
   #work_explain{
 	  white-space: normal;
@@ -150,7 +160,7 @@ body{
 	  margin:24vh 0;
 	  letter-spacing: 3px;
 	  font-weight: bold;
-	  font-size:2rem;
+	  font-size:1.8rem;
 	  white-space:normal;
 	  word-break:break-all;
   }
@@ -161,7 +171,11 @@ body{
 	font-size:2rem;
 	white-space:normal;
 	word-break:break-all;
-}
+}.icon { 
+	width:2.5rem;
+	 height:2.5rem; 
+    vertical-align: middle;
+  }
   .mom_touch_square{
 	margin:16vh 0;
 	letter-spacing: 3px;
@@ -421,7 +435,7 @@ body{
 	}
 	#howto_img{	
 		position: relative;
-		height: 80vw;
+		height: 90vw;
 		width: 60vw;		
 		margin-left: 15vw;
 
@@ -459,5 +473,24 @@ body{
 		width: -moz-available;
 		width: -webkit-fill-available;
 		width: fill-available;
+	  }
+
+	  .infor{
+		  margin:auto;
+		  margin-top : 5vh;
+	  }
+	  .infor td {	  
+		float: left;
+		margin-left: 20px;
+
+	  }
+	  .infor td,
+	  .infor th{
+		  padding : 0;
+	  }
+	  .icon {
+		vertical-align: middle;
+		width:2rem;
+		height:2rem;
 	  }
 }
